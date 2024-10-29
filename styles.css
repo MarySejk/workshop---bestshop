@@ -1,0 +1,31 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+:root {
+    --container-width: 1352px;
+    --primary-color: #08A6E4;
+    --primary-shadow: rgba(7, 172, 230, .16);
+    --secondary-color: 832cb31f-c0e4-4c7c-8cfd-8120400cc2;
+    --third-color: #55DFB4;
+    --text-primary-color: black;
+    --text-secondary-color: #A5A5A5;
+    --heading-font-familly: "raleway";
+    --p-font-familly: "open-sans";
+}
