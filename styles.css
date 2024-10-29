@@ -2,22 +2,24 @@
 // <weight>: Use a value from 100 to 900
 
 .raleway-<uniquifier> {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
+
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 300 to 800
 
 .open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
+
 :root {
     --container-width: 1352px;
     --primary-color: #08A6E4;
@@ -28,4 +30,72 @@
     --text-secondary-color: #A5A5A5;
     --heading-font-familly: "raleway";
     --p-font-familly: "open-sans";
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: var(--heading-font-familly);
+    color: var(--text-primary-color);
+    font-size: 49px;
+}
+
+h2 {
+    font-family: var(--heading-font-familly);
+    color: var(--text-primary-color);
+    font-size: 36px;
+}
+
+h3 {
+    font-family: var(--heading-font-familly);
+    color: var(--text-primary-color);
+    font-size: 21px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    padding: 0 auto;
+    margin:0 auto;
+    justify-content: center;
+}
+.heading {
+    width: var(--container-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    flex:1;
+    }
+.logo {
+    color: var(--primary-color);
+    font-size: 32px;
+    font-family: var(--heading-font-familly);
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 136px;
+    flex: 1;
+   }
+.menu { 
+ 
+}
+ol {
+    display: flex;
+    justify-content: center;
+    padding: 0 auto;
+    }
+.menu li a{
+    padding: 0 95px;
+    color: var(--text-secondary-color);
+    font-size: 11px;
+    font-weight: bold;
+    font-family: var(--p-font-familly);
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: var(--text-primary-color);
+    border-color: none none var(--primary-color) none;
 }
