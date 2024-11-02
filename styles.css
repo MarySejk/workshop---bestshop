@@ -294,7 +294,7 @@ ol {
 }
 
 .benefits-container span {
-    content: none;
+    content: "";
     border-bottom: #FB3B64 solid 4px;
     width: 332px;
     height: 50px;
@@ -430,10 +430,12 @@ ol {
 
 .pricing-box:first-child .pricing-price {
     color: var(--secondary-color);
+    margin-bottom: 13px;
 }
 
 .pricing-box:nth-child(2) .pricing-price {
     color: var(--primary-color);
+    
 }
 
 .pricing-box:nth-child(3) .pricing-price {
@@ -458,6 +460,22 @@ ol {
 .pricing-items {
     margin-bottom: 25px;
 }
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(..//workshop---bestshop/images/Checkmark-2.svg);
+}
+.pricing-item-not-included::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(../workshop---bestshop/images/Close.svg);
+}
   
 .pricing-box-basic {
     border: var(--secondary-color) solid 1px;
@@ -480,7 +498,7 @@ ol {
 .pricing-btn {
     font-size: 13px;
     font-weight: bold;
-    border-radius: 24px;
+    border-radius: 23px;
     padding: 36px 18px;
     text-decoration: none;
     width: 150px;
@@ -489,6 +507,9 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 10px 14px #07ACE629;
+    position: relative;
+    bottom: -35px;
 }
 
 .pricing-box:first-child .pricing-btn {
