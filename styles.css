@@ -28,8 +28,8 @@
     --third-color: #55DFB4;
     --text-primary-color: black;
     --text-secondary-color: #A5A5A5;
-    --heading-font-familly: "raleway";
-    --p-font-familly: "open-sans";
+    --heading-font-familly: "Raleway", sans-serif;
+    --p-font-familly: "Open Sans", sans-serif;
 }
 
 * {
@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-family: var(--heading-font-familly);
+    font-family: "Raleway";
     color: var(--text-primary-color);
     font-size: 36px;
 }
@@ -55,47 +55,198 @@ h3 {
     font-size: 21px;
     font-weight: bold;
 }
-.container{
+
+p {
+    font-family: var(--p-font-familly);
+    color: var(--text-primary-color);
+    font-size: 16px;
+}
+
+.container {
     display: flex;
     padding: 0 auto;
-    margin:0 auto;
+    margin: 0 auto;
     justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
 }
+
 .heading {
     width: var(--container-width);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 28px;
-    flex:1;
-    }
+    flex: 1;
+}
+
 .logo {
     color: var(--primary-color);
     font-size: 32px;
     font-family: var(--heading-font-familly);
     display: flex;
     justify-content: flex-start;
-    padding: 0 0 0 136px;
-    flex: 1;
-   }
-.menu { 
- 
+    padding: 0 auto;
+    font-weight: 300;
 }
+
+.menu {
+    letter-spacing: 3.28px;
+    padding: 0 26px;
+}
+
 ol {
     display: flex;
     justify-content: center;
-    padding: 0 auto;
-    }
-.menu li a{
-    padding: 0 95px;
+    padding: 0 26px;
+}
+
+.menu li a {
+    padding: 28px 48px 22px;
     color: var(--text-secondary-color);
     font-size: 11px;
     font-weight: bold;
     font-family: var(--p-font-familly);
     text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
 }
 
 .menu li a:hover {
     color: var(--text-primary-color);
-    border-color: none none var(--primary-color) none;
+    border-bottom: 4px solid #08A6E4;
+}
+
+.opening {
+    align-items: center;
+    padding: 0 auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.opening h1 {
+    font-family: var(--heading-font-familly);
+    color: var(--text-primary-color);
+    font-size: 49px;
+    padding: 200px 0 0 0;
+}
+
+.opening p {
+    font-family: var(--p-font-familly);
+    color: var(--text-primary-color);
+    font-size: 16px;
+    padding: 20px 38px;
+}
+
+.opening-btn {
+    font-family: var(--p-font-familly);
+    font-size: 16px;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 22px 98px;
+    border-radius: 40px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: var(--container-width);
+    margin: 100px auto 120px;
+}
+
+.statistics h2 {
+    font-family: "Raleway";
+    color: var(--text-primary-color);
+    font-size: 36px;
+    padding-bottom: 100px;
+    align-self: center;
+
+}
+
+.statistics-columns {
+    display: flex;
+    justify-content: center;
+    font-family: var(--p-font-familly);
+    flex: 1;
+    gap: 15px;
+}
+
+.statistics-circle {
+    border-radius: 50%;
+    content: none;
+    width: 63px;
+    height: 63px;
+    position: relative;
+}
+
+.statistics-first-col .statistics-circle {
+    background-color: #FB3B64;
+}
+
+.statistics-icon-first {
+    position: absolute;
+    left: 40%;
+    top: 5px;
+}
+
+.statistics-second-col .statistics-circle {
+    background-color: var(--primary-color);
+}
+
+.statistics-icon-second {
+    position: absolute;
+    left: 51%;
+    top: 20px
+}
+
+.statistics-third-col .statistics-circle {
+    background-color: #55DFB4;
+}
+
+.statistics-icon-third {
+    position: absolute;
+    left: 60%;
+    top: 15px;
+}
+
+.statistics-number {
+    font-weight: bolder;
+    color: var(--text-primary-color);
+    font-size: 20px;
+    letter-spacing: 5.96px;
+    padding: 15px 20px;
+}
+
+.statistics-p {
+    color: var(--text-secondary-color);
+    font-size: 17px;
+}
+
+.statistics-first-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistics-second-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistics-second-col .statistics-p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.statistics-third-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
