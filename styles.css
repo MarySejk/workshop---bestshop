@@ -629,4 +629,27 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+}
+footer {
+    display: flex;
+    box-shadow: 0px -5px 40px #00000029;
+   }
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    color: var(--text-secondary-color);
+    font-size: 12px;
+    font-family: var(--p-font-familly);
+}
+.footer-logo {
+    padding: 20px 80px;
+     }
+
+.ikonky {
+    padding: 20px;
+    width: 50px;
+    display: flex;
 }
