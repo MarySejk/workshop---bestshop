@@ -435,7 +435,7 @@ ol {
 
 .pricing-box:nth-child(2) .pricing-price {
     color: var(--primary-color);
-    
+
 }
 
 .pricing-box:nth-child(3) .pricing-price {
@@ -454,12 +454,15 @@ ol {
     padding: 10px;
     text-align: center;
 }
+
 .pricing-item {
     font-size: 14px;
-       }
+}
+
 .pricing-items {
     margin-bottom: 25px;
 }
+
 .pricing-item::before {
     content: "";
     width: 11px;
@@ -468,6 +471,7 @@ ol {
     margin-right: 10px;
     background-image: url(..//workshop---bestshop/images/Checkmark-2.svg);
 }
+
 .pricing-item-not-included::before {
     content: "";
     width: 11px;
@@ -476,7 +480,7 @@ ol {
     margin-right: 10px;
     background-image: url(../workshop---bestshop/images/Close.svg);
 }
-  
+
 .pricing-box-basic {
     border: var(--secondary-color) solid 1px;
     ;
@@ -486,6 +490,7 @@ ol {
     border: var(--primary-color) solid 1px;
     box-shadow: 5px 10px 27px #07ACE629;
 }
+
 .pricing-box-professional li {
     padding: 12.5px;
 }
@@ -522,4 +527,106 @@ ol {
 
 .pricing-box:nth-child(3) .pricing-btn {
     background-color: var(--third-color);
+}
+
+/*formulář*/
+.form {
+    width: var(--container-width);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-form {
+    display: flex;
+
+}
+
+.form h1 {
+    font-family: var(--heading-font-familly);
+    color: var(--text-primary-color);
+    font-size: 49px;
+    padding: 20px 0;
+}
+
+.form-p {
+    font-size: 16px;
+    font-family: var(--p-font-familly);
+    padding: 20px 0;
+}
+
+.form-contact {
+    display: flex;
+}
+
+.form-email,
+.form-telefon {
+    color: #A5A5A5;
+
+    font-size: 16px;
+    font-family: var(--p-font-familly);
+    padding: 20px 0;
+}
+
+.form img {
+    padding: auto;
+}
+
+.form-col-two {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: calc(var(--container-width)*0.5);
+    padding: 0px 100px;
+}
+
+.form-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label {
+    font-size: 11px;
+    color: var(--primary-color);
+    font-family: var(--p-font-familly);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px 10px 0;
+}
+
+input {
+    padding: 20px;
+    border: none;
+    border-bottom: 3px solid var(--text-secondary-color);
+}
+
+.label-checkbox {
+    font-size: 12px;
+    font-family: var(--p-font-familly);
+    color: var(--text-secondary-color);
+    padding: 20px;
+}
+.check {
+    display: flex;
+}
+.form-btn-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 5px 10px 14px #07ACE629;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: var(--p-font-familly);
+    padding: 20px 90px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
